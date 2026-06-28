@@ -209,6 +209,14 @@ The "Ralph Wiggum Loop" is the core implementation pattern of Harness Engineerin
 | [vibe-coding-cn](https://github.com/tukuaiai/vibe-coding-cn) | Chinese Vibe Coding community guide |
 | [Mitchell Hashimoto: Engineer the Harness](https://mitchellh.com/writing/my-ai-adoption-journey#step-5-engineer-the-harness) | Another origin of the "Harness" concept |
 
+## 🪞 The repo is its own harness (self-reference)
+
+> This archive now curates itself.
+>
+> Bringing in outside research no longer runs on vibes — it follows a pipeline frozen into a skill, [`curate-research`](.claude/skills/curate-research/SKILL.md): review is automated by parallel agents (the feedback loop), `scripts/check-consistency.sh` keeps counts from drifting via C1–C8 (the mechanical rail), and whether something gets in is always a human gate (humans steer, agents execute).
+>
+> So the constraints themselves became the product — exactly what [concepts/07-spec-as-product.md](concepts/07-spec-as-product.md) argues, except this time the subject is the repo itself.
+
 ## 🤝 Contributing
 
 Contributions via Issues and PRs are welcome:

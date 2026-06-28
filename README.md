@@ -234,6 +234,14 @@ git config core.hooksPath .githooks
 
 详情见根 `AGENTS.md` 的"机械化检查"段。
 
+## 🪞 仓库即 harness（自我指涉）
+
+> 这个仓库开始策展自己了。
+>
+> 收录外部调研不再靠手感——它走一条固化成 skill 的流水线 [`curate-research`](.claude/skills/curate-research/SKILL.md)：评审由并行 agent 自动完成（反馈回路），`scripts/check-consistency.sh` 的 C1–C8 守着计数不漂移（机械护栏），而"收不收进来"始终是一道人类闸门（人类掌舵、智能体执行）。
+>
+> 于是约束本身成了产品——正是本仓库 [concepts/07-spec-as-product.md](concepts/07-spec-as-product.md) 讲的东西，只不过这次的实验对象是仓库自己。
+
 ## 🤝 参与贡献
 
 欢迎通过 Issue 和 PR 参与：
