@@ -44,9 +44,10 @@
 - **C6** — `references/articles.md` 末尾"不计入 N 篇"中的 N ≡ C1 权威值
 - **C7** — 三脉络 per-track 计数（脉络一/二/三）在 4 处下游声明保持一致：READMEs 资料库表、`references/AGENTS.md` 三脉络小标题、`prompts/deep-research-tracker.md` 三脉络明细
 - **C8** — 翻译流水线本地守卫：`translate/<...>/sources/<slug>/source-full.md` 存在时，对应 `01-analysis.md` 不得再声称"仅摘要页 / 建议补抓全文"。`translate/` 已 gitignore，CI 与干净 clone 自动 SKIP，仅本地有过程稿时触发
+- **C9** — `concepts/` / `thinking/` / `feedback/` 正文不得裸写文库计数（"N 篇文章 / N 篇翻译 / N 大概念"）；历史性提法须带"写作时点 / 当时 / 此前 / 首批 / 首轮 / 截至 / 快照"限定词，否则去数字改链 `references/articles.md`
 
 执行：`bash scripts/check-consistency.sh`（仓库根目录）
 启用 pre-commit 阻断：`git config core.hooksPath .githooks`
 
-**CI 兜底**：`.github/workflows/consistency.yml` 在每次 push / PR 触及受控文件时跑同一脚本。
+**CI 兜底**：`.github/workflows/consistency.yml` 在每次 push / PR 时跑同一脚本（不做路径过滤，保证必需检查总能上报）。job 显示名固定为 `consistency / check`——分支保护按 check run 名匹配必需检查，改名会让所有 PR 重新被 "Expected" 卡住。
 本地 hook 是开发反馈，CI 是合并门——两层独立，本地未启用 hook 不会绕过检查。
