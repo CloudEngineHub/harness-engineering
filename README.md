@@ -1,8 +1,8 @@
 中文 | [English](README.en.md)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-30-green)
-![Translations](https://img.shields.io/badge/translations-22-orange)
+![Articles](https://img.shields.io/badge/articles-42-green)
+![Translations](https://img.shields.io/badge/translations-24-orange)
 
 # Harness Engineering 学习指南
 
@@ -111,10 +111,10 @@ harness-engineering/
 ├── thinking/              # Phase 2：独立思考与质疑（9 篇）
 ├── practice/              # Phase 3：小项目实验（1 个 Ralph Demo）
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
-├── works/                 # Phase 5：可展示的作品（22 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
+├── works/                 # Phase 5：可展示的作品（24 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
 ├── tools/                 # 工具具像化：降低 6 维复杂度的杠杆库
 ├── prompts/               # 验证有效的提示词积累
-└── references/            # 外部资源索引（30 篇文章深度摘要）
+└── references/            # 外部资源索引（42 篇文章深度摘要）
 ```
 
 每个子目录都有自己的 `AGENTS.md`，说明该目录的用途和写作约定。这本身就是原文「渐进式披露」的实践。
@@ -125,29 +125,31 @@ harness-engineering/
 - [x] **Phase 2：形成自己的观点** — 9 篇独立思考（持续中）
 - [x] **Phase 3：选一个小项目实践** — Ralph Demo 完成（321 秒，$0.31）
 - [x] **Phase 4：记录反馈迭代** — 1 篇（持续中）
-- [x] **Phase 5：输出可展示的作品** — 22 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
+- [x] **Phase 5：输出可展示的作品** — 24 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
 
 ## 📚 研究资料库
 
-跨三条知识脉络 30 篇文章 + 3 篇延伸阅读：
+跨三条知识脉络 42 篇文章 + 2 篇延伸阅读：
 
 | 脉络 | 覆盖 | 核心视角 |
 |------|------|---------|
-| AI 时代的 Harness Engineering | 27 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向 → Subagent runtime → 传感器/SPDD/ADLC → 越界与质量复盘 → 实践复盘与 Engine |
+| AI 时代的 Harness Engineering | 38 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向与源码实锤 → Subagent runtime → 传感器/SPDD/ADLC → 越界·安全审计·质量复盘 → 评测三部曲 → 动态工作流 → 起源考据（Ralph / Hashimoto）与学科汇流 |
 | 云原生 Harness.io | 2 篇 | CI/CD 平台架构（同名不同义的参照） |
-| 效率悖论与能力进化 | 1 篇 | YDD 系统性拆解：约束理论 + Spec/Rule/Skill |
-| 延伸阅读 | 3 篇 | Mitchell Hashimoto、Context Engineering、人机协作 |
+| 效率悖论与能力进化 | 2 篇 | YDD 系统性拆解 + METR 实验后续（测量方法论危机） |
+| 延伸阅读 | 2 篇 | Context Engineering、人机协作 |
 
 详见 [references/articles.md](references/articles.md) — 每篇文章含核心论点、关键数据、跨文章关联的深度摘要。
 
 ## 📖 翻译作品
 
 <details>
-<summary><b>22 篇核心文章的中文翻译</b>（点击展开）</summary>
+<summary><b>24 篇核心文章的中文翻译</b>（点击展开）</summary>
 
 | 作品 | 原作者 | 来源 |
 |------|--------|------|
 | ⭐ [渴望了八年，用 AI 三个月造出来](works/maganti-eight-years-building-ai-translation.md) | Lalit Maganti | 个人博客 |
+| [为每个任务配一套 harness：动态工作流](works/anthropic-dynamic-workflows-translation.md) | Thariq Shihipar 等 | Anthropic / Claude |
+| [METR：我们正在更改生产力实验设计](works/metr-uplift-update-translation.md) | Joel Becker 等 | METR |
 | [Inside the Scaffold 论文](works/inside-the-scaffold-paper-translation.md) | Benjamin Rombaut | Huawei / arXiv |
 | [Meta-Harness 论文](works/meta-harness-paper-translation.md) | Yoonho Lee 等 | Stanford / arXiv |
 | [Harness Engineering 正式版](works/fowler-harness-engineering-full-translation.md) | Birgitta Böckeler | Martin Fowler |
@@ -206,7 +208,7 @@ harness-engineering/
 | 资源 | 说明 |
 |------|------|
 | [vibe-coding-cn](https://github.com/tukuaiai/vibe-coding-cn) | 中文 Vibe Coding 社区指南 |
-| [Mitchell Hashimoto: Engineer the Harness](https://mitchellh.com/writing/my-ai-adoption-journey#step-5-engineer-the-harness) | "Harness" 概念的另一个起源 |
+| [Mitchell Hashimoto: Engineer the Harness](https://mitchellh.com/writing/my-ai-adoption-journey#step-5-engineer-the-harness) | "harness engineering" 命名出处（已收录为文章 #29，深度摘要见 references/articles.md） |
 
 ## 🛠️ 开发须知
 
